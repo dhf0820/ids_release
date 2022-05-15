@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: release
+    project: roi
+  name: release
+  namespace: roi
+spec:
+  clusterIP: None
+  ports:
+    - name: service
+      port: 9900
+      protocol: TCP
+      targetPort: 9900
+  selector:
+    app: release
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

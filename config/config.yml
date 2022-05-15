@@ -1,0 +1,41 @@
+# Core
+coredeploymode: "DOCKER"   # LOCAL OR K8S
+coreport: "50051"
+coretlsmode: "none"
+coreaddress: "roi_core"
+corecertname:
+coretestmode: "prod"
+
+#Ddelivery Service information
+deliverydeploymode: "DOCKER"  # LOCAL OR K8S
+deliveryaddress: "delivery_service"
+deliveryport: "50051"
+deliverytlsmode: "none"
+deliverycertname:
+deliverydatabase: "test_delivery_queue"
+
+#Release Service information
+releasedeploymode: "DOCKER"  # LOCAL OR K8S
+releaseaddress: "release_service"
+releaseport: "50051"
+releasetlsmode: "none"
+releasecertname:
+releasedatabase: "test_release_service"
+releasetestmode: "prod"
+
+# Document Service Information
+documentport: "50051"
+documentaddress: "document_service"
+documenttlsmode: "none"
+documentcertname:
+documentdatabase: "test_document_service"
+documentdeploymode: "DOCKER"
+documenttestmode: "prod"
+
+
+
+db: "mongo"
+atlas: "mongodb+srv://%s:%s@cluster0-rcwui.mongodb.net/documents?retryWrites=true&w=majority"
+mongodb: "//%s:%s@docker1.vertisoft.com:27017/?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-256"
+dbenv: "mongodb"
+testing: "true"

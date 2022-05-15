@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: roi
+  name: release-stage-settings
+  labels:
+    app: release-stage-settings
+data:
+  DATABASE: test_documents
+  POOLSIZE: "100"
+  DB:  local
+  MONGODB: "mongodb://dhf:%s@docker1.vertisoft.com:27017/?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-256"
+  DOCUMENT_SERVICE_NAME: document
+  DEPLOY_TYPE: K8S

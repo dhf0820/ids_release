@@ -1,0 +1,138 @@
+{
+
+  "id": "5fc9a822a897f49640c1dc9e",
+  "connector": "release_service",
+  "description": "Test Release Service",
+  "customer": {
+    "name": "default",
+    "code": 0,
+    "facility": "demo",
+    "user_id": ""
+  },
+  "connector_url": "",
+  "retry_plan": {
+    "retries": 20,
+    "delay": 10,
+    "delay_type": "backoff"
+  },
+  "endpoints": [
+    {
+      "label": "amqp",
+      "type": "amqp",
+      "url": "amqp://linode.ihids.com:5672/roi/"
+    },
+    {
+      "label": "core_log",
+      "type": "rest",
+      "url": "roi_core/log"
+    },
+    {
+      "label": "ca_api_url",
+      "type": "rest",
+      "url": "http://docker1.ihids.com:4567/api/v1",
+      "access" : "37"
+    },
+    {
+      "label": "ca_image_url",
+      "type": "rest",
+      "url": "http://docker1.ihids.com:4567/api/v1",
+      "access" : "37"
+    },
+    {
+      "label": "ui_url",
+      "type": "rest",
+      "url": "ui"
+    }
+  ],
+  "connect_info": [
+    {
+      "name": "my_port",
+      "value": "50051"
+    },
+    {
+      "name": "my_address",
+      "value": "roi_release_service"
+    },
+    {
+      "name": "my_tlsmode",
+      "value": "none"
+    },
+    {
+      "name": "my_type",
+      "value": "grpc"
+    },
+    {
+      "name": "delivery_address",
+      "value": "roi_delivery"
+    },
+    {
+      "name": "delivery_port",
+      "value": "50051"
+    },
+    {
+      "name": "delivery_tlsmode",
+      "value": "none"
+    },
+    {
+      "name": "delivery_type",
+      "value": "grpc"
+    },
+    {
+      "name": "core_address",
+      "value": "core_delivery"
+    },
+    {
+      "name": "core_port",
+      "value": "50051"
+    },
+    {
+      "name": "core_tlsmode",
+      "value": "none"
+    },
+    {
+      "name": "core_type",
+      "value": "grpc"
+    },
+    {
+      "name": "core_log_address",
+      "value": "core_delivery"
+    },
+    {
+      "name": "core_log_port",
+      "value": "50051"
+    },
+    {
+      "name": "core_log_tlsmode",
+      "value": "none"
+    },
+    {
+      "name": "core_log_type",
+      "value": "grpc"
+    },
+    {
+      "name": "queue_name",
+      "value": "t_demo_link"
+    },
+    {
+      "name": "pg_server",
+      "value": "db.vertisoft.com"
+    },
+    {
+      "name": "pg_user",
+      "value": "evihcratrahc"
+    },
+    {
+      "name": "pg_password",
+      "value": "!tahn0jcaS"
+    },
+    {
+      "name": "pg_database",
+      "value": "chartarchive_dev"
+    }
+  ],
+  "fields": [],
+  "last_updated": "0001-01-01T00:00:00Z",
+  "create_date": "0001-01-01T00:00:00Z"
+}
+
+

@@ -1,0 +1,94 @@
+{
+  "name": "release",
+  "version": "prod",
+  "dataconnector": {
+    "server": "mongodb://dhf:Sacj0nhat1@docker1.vertisoft.com:27017/?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-256",
+    "user": "dhf",
+    "password": "Sacj0nhat1",
+    "port": "17017",
+    "database" : "release_service",
+    "fields" : [
+      {
+        "name": "collection",
+        "value" : "releases"
+      },
+      {
+        "name" : "poolsize",
+        "value": "100"
+      }
+    ]
+  },
+  "services": [
+    {
+      "Name": "delivery",
+      "Scope": "normal"
+    },
+    {
+      "Name": "document",
+      "Scope": "normal"
+    }
+  ],
+  "MyEndPoints": [
+    {
+      "Label": "release",
+      "name" : "ReleaseService",
+      "Protocol": "grpc",
+      "Address": "roi_release",
+      "Access": "",
+      "Port": "9011",
+      "TLSMode": "none",
+      "DeployMode": "LOCAL"
+    },
+    {
+      "Label": "restful_release",
+      "name" : "RestFulReleaseService",
+      "Protocol": "http",
+      "Address": "localhost",
+      "Access": "",
+      "TLSMode": "none",
+      "Port": "9311"
+    }
+  ],
+  "ServiceEndPoints": [
+    {
+      "Name": "grpc_delivery",
+      "Label" : "DeliveryService",
+      "Protocol": "grpc",
+      "Address": "localhost:9310",
+      "Access": "",
+      "Port": "50051",
+      "TLSMode": "none",
+      "Scope" : "normal"
+    },
+    {
+      "Label": "restful_delivery",
+      "name" : "RestfulDeliveryService",
+      "Protocol": "http",
+      "Address": "localhost:9310",
+      "Access": "",
+      "Port": "9310",
+      "TLSMode": "none",
+      "Scope" : "normal"
+    },
+    {
+      "Name": "grpc_document",
+      "Label" : "DocumentService",
+      "Protocol": "grpc",
+      "Address": "localhost:9312",
+      "Access": "",
+      "Port": "50051",
+      "TLSMode": "none",
+      "Scope" : "normal"
+    },
+    {
+      "Label": "restful_document",
+      "name" : "RestfulDocumentService",
+      "Protocol": "http",
+      "Address": "localhost:9312",
+      "Access": "",
+      "Port": "9312",
+      "TLSMode": "none",
+      "Scope" : "normal"
+    }
+  ]
+}

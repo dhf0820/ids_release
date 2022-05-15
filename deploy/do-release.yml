@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: release
+  name: release
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: release
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: release
+      annotations:
+        linkerd.io/inject: enabled
+    spec:
+      containers:
+        - name: release
+          image: dhf0820/release_server:200619.3
+          resources: {}
+          env:
+            - name: DATABASE
+              value: "test_release_service"
+            - name: RELEASE_ADDRESS
+              value: "0.0.0.0"
+            - name: RELEASE_PORT
+              value: "9910"
+            - name: DBENV
+              value: "mongodb"
+            - name: CERTS
+              value: "/etc/ssl/vscerts/linux_ssl"
+            - name: CERTNAME
+              value: "junk" #junk, cutter, docker3, localhost
+            - name: ATLAS
+              value: "mongodb+srv://dhf:Sacj0nhat1@cluster0-rcwui.mongodb.net/documents?retryWrites=true&w=majority"
+            - name: MONGODB
+              value: "mongodb://dhf:Sacj0nhat1@docker1.vertisoft.com:27017/?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-256"
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: release
+    project: roi
+  name: release
+  namespace: roi
+spec:
+  clusterIP: None
+  ports:
+    - name: service
+      port: 9900
+      protocol: TCP
+      targetPort: 9900
+  selector:
+    app: release
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

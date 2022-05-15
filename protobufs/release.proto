@@ -1,0 +1,292 @@
+syntax = "proto3";
+
+package release;
+
+option go_package = "./protobufs/relPB/;relPB";
+
+//message AddRelease {
+//    string id = 1;              // Database Id for this Release
+//    string client = 2;
+//    string facility = 3;        // facility generating the release
+//    string source_id = 4;      // Source_Release senders reference id if given.
+//    string user_name = 5;           // user_name of the person creating the release
+//    string pat_name = 6;
+//    string pat_mrn = 7;
+//    string pat_dob = 8;
+//    string pat_ssn = 9;
+//    string source = 10;
+//    string release_id = 11;
+//}
+
+//Release  The recipient and delivery devices are stored in History once delivered. They are separate when submitted to delivery
+//message Release {
+//    string name = 1;
+//    string id = 2;              // Database Id for this Release
+//    string client = 3;
+//    string facility = 4;        // facility generating the release
+//    string source_id = 5;      // Source_Release senders reference id if given.
+//    string pat_mrn = 6;                 // patient mrn
+//    string pat_name=7;
+//    string pat_dob = 8;
+//    string pat_ssn = 9;
+//    string user_name = 10;           // user_name of the person creating the release
+//    repeated Document documents = 11;
+//}
+
+message Release {
+    string              rel_id     = 1;
+    Client              client     = 2;
+    Customer            customer   = 3;
+    Patient             patient    = 4;
+    repeated Document   documents  = 5;
+    repeated History    history    = 6;
+    int64               updated_at = 7;
+    int64               created_at = 8;
+}
+
+message History {
+    string  recipient_id    = 1;
+    string  device_id       = 2;
+    string  status          = 3; //created, queued, inprocess, delivered, failed
+    int32   attempts        = 4;
+    int64   submit_time     = 5;
+    int64   delivery_time   = 6;
+}
+
+message Client {
+    string source       = 1;
+    string source_id    = 2;  // whatever the sources ID for this object being created
+}
+
+message Customer {
+    string  name        = 1;
+    string  code        = 2;
+    string  facility    = 3;
+    //string  user_id     = 4;
+}
+
+message Delivery {
+    string id               = 1;
+    string release_id       = 2;
+    Client client           = 3;
+    Customer customer       = 4;
+    string recipient_id     = 5;
+    Status status           = 6;
+    int32 priority          = 9;
+    int32 attempts          = 10;
+    int64 NextTryTime       = 11;
+    int64 TimeToLive        = 12;
+    int64 updated_at        = 13;
+    int64 created_at        = 14;
+    Patient patient         = 15;
+    string device_id        = 16;
+}
+
+message Status {
+    string status   = 1;
+    string comment  = 2;
+    int64  status_time = 3;
+}
+
+
+
+message Recipient {
+    string id       = 1;
+    Device device   = 2;
+}
+
+message Device {
+    string id       = 1;
+    string method   = 2;
+    string name     = 3;
+}
+
+message Document {
+    string id               = 1;
+    string image_repository = 2;  // ca, cerner, our own.
+    string image_type       = 3;
+    string image_url        = 4;
+    string doc_class         = 5;
+    string description      = 6;
+    string version          = 7;
+    string document_url     = 8;
+    string source_document_url  = 9;
+    string source_image_url     = 10;
+}
+
+
+message DeviceSummary {
+    string id = 1;
+    string method = 2;
+    string name = 3;
+}
+
+message DeviceDetail {
+    string      id              = 1;
+    string      recipient_id    = 2;
+    string      method          = 3;
+    string      name            = 4;
+    string      validated       = 5;
+    int64       validated_at    = 6;
+    repeated    Field fields   = 7;
+    int64       updated_at      = 8;
+}
+
+
+message Field {
+    string name             = 1;
+    string label            = 2;
+    string default          = 3;
+    string value            = 4;
+    string required         = 5;
+    string user_visible     = 6;
+    string is_name_value    = 7;
+    string sensitive        = 8;
+}
+
+message Patient {
+    string mrn          =1;
+    string patient_name =2;
+    string dob          =3;
+    string ssn          =4;     // used to identify the patient in remote system
+    string source       = 5;
+    string source_id    = 6;
+}
+
+//message CreateRelease {
+//    Release release=1;
+//    Recipient recipient=2;
+//}
+
+message AddDocumentRequest {
+    Document doc    = 1;
+    string rel_id   = 2;
+}
+
+message AddDocumentResponse {
+    Release release = 1;
+    string message  = 2;
+}
+
+
+message GetReleaseRequest {
+    string   relId           = 1;
+    string   customer_code   = 2;
+    string   foreign_id      = 3; // Use the source and source_id to find by foreign_id
+
+}
+
+message ReleaseResponse {
+    Release release = 1;
+}
+
+message CreateReleaseRequest {
+    Release release= 1;
+}
+
+message CreateReleaseResponse {
+    Release release =1;
+}
+
+message LockReleaseRequest {
+    string releaseId    = 1;
+    string mode         = 2;
+}
+
+
+//message DeliveryRequest {
+//    Delivery    delivery        = 1;
+//}
+
+//message DeliveryResponse {
+//    Delivery    delivery     = 1;
+//}
+//
+//message SubmitDeliveryRequest {
+//    string release_id       = 1;
+//    string recipient_id     = 2;
+//    string device_id        = 3;  //If length is < 10 it is the name of the device, otherwise it is the real ID
+//    Client client           = 4;
+//    Customer customer       = 5;
+//    Delivery delivery       = 6;
+//}
+
+//message ErrorResult {
+//    string status = 1;  // "" no error
+//    string message = 2; // Error messaage or other info to be returned.
+//}
+/*
+message UpdateDeliveryStatusRequest {
+    string release_id = 1;
+    DeliveryStatus delivery_status=2;
+    string notes = 3;
+}
+
+message UpdateDocumentImageResponse{
+    string  status = 1;
+    string message = 2;
+}
+
+message Image {
+    string id = 1;          // Database id of document to retrieve the image first 2 characters of image_id determine source
+    bytes image = 2;
+}
+
+message GetImageResponse {
+    bytes image = 1;
+}
+
+message GetImageRequest {
+    string doc_id = 1;
+}
+
+
+message CreateDocumentResponse {
+    string id = 1;
+}
+
+
+message UpdateDocumentResponse {
+    string id = 1;
+}
+
+message DeleteDocumentRequest {
+    string id = 1;
+}
+
+message DeleteDocumentResponse {
+    string id = 1;
+}
+
+message GetDocumentForIDRequest {
+    string id = 1;
+}
+
+*/
+message GetDocumentsRequest {
+    string relId = 1;
+}
+
+message DocumentsResponse {
+    repeated Document documents = 1;
+}
+
+
+
+message CallStatus {
+    bool    ok      = 1;
+    string  comment = 2;
+
+}
+
+
+service ReleaseService {
+    //rpc GetReleaseByForeignId ( GetReleaseRequest) returns (ReleaseResponse) {}
+    rpc CreateRelease (CreateReleaseRequest) returns(CreateReleaseResponse){}
+    rpc AddDocument( AddDocumentRequest) returns(AddDocumentResponse) {}
+    rpc GetRelease(GetReleaseRequest) returns(ReleaseResponse) {}
+    rpc LockRelease(LockReleaseRequest) returns(CallStatus) {}
+    rpc GetDocuments(GetDocumentsRequest) returns(DocumentsResponse) {}
+    //rpc GetReleaseSummary(GetReleaseRequest) returns(ReleaseSummary) {}
+
+}

@@ -1,0 +1,520 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Fri May 13 11:50:57 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 22)
+SRC := /Users/dhf/Dropbox/1-work/ROI/Release
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 11)
+IMAGE_TEST_NAME = $(IMG_NAME)_test_$(ARCH)
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile (from `Makefile', line 2)
+NS = dhf0820
+# makefile
+ 
+CURDIR := /Users/dhf/Dropbox/development/ids/services/ids_release_service
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 10)
+IMAGE_NAME = $(IMG_NAME)_$(ARCH)
+# makefile (from `Makefile', line 30)
+GOBUILD = $(GOCMD) build
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 24)
+CLIENT_PKG_BUILD := ""gitlab.com/dhf0820/ids_release_service"/cmd/client"
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# makefile (from `Makefile', line 7)
+VERSION = $(TAG)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from `Makefile', line 18)
+PB_OUT := pkg/pb/*.pb.go
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# makefile (from `Makefile', line 31)
+GOCLEAN = $(GOCMD) clean
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/d5/_rdllmh520s_t3zrf73qndth0000gn/T/vscode-ipc-abc9dc90-119e-4a85-9af4-65e329f5ffd5.sock
+# environment
+VSCODE_CWD = /
+# environment
+GOPROXY = https://proxy.golang.org,direct
+# environment
+PATH = /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+# makefile (from `Makefile', line 9)
+IMG_NAME = release
+# makefile (from `Makefile', line 33)
+GOGET = $(GOCMD) get
+# makefile (from `Makefile', line 111)
+CGO_ENABLED = 0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -ldflags="-w -s" -o release
+# environment
+GOPATH = /Users/dhf/go
+# makefile (from `Makefile', line 25)
+PKG_LIST := gitlab.com/dhf0820/ids_release_service gitlab.com/dhf0820/ids_release_service/client gitlab.com/dhf0820/ids_release_service/cmd/client gitlab.com/dhf0820/ids_release_service/connect gitlab.com/dhf0820/ids_release_service/internal/db/vsmongo gitlab.com/dhf0820/ids_release_service/internal/domain gitlab.com/dhf0820/ids_release_service/internal/service gitlab.com/dhf0820/ids_release_service/internal/settings gitlab.com/dhf0820/ids_release_service/messaging gitlab.com/dhf0820/ids_release_service/pkg gitlab.com/dhf0820/ids_release_service/pkg/common gitlab.com/dhf0820/ids_release_service/protobufs/relPB gitlab.com/dhf0820/ids_release_service/service
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `Makefile', line 20)
+API_SWAG_OUT := "api/api.swagger.json"
+# makefile (from `Makefile', line 3)
+TAG = latest
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.sq02lhNO8l/Listeners
+# makefile (from `Makefile', line 15)
+CLIENT_OUT := "cmd/client"
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/dhf/Dropbox/development/ids/services/ids_release_service
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# makefile (from `Makefile', line 21)
+PKG := "gitlab.com/dhf0820/ids_release_service"
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man::
+# environment
+GOMODCACHE = /Users/dhf/go/pkg/mod
+# environment
+HOME = /Users/dhf
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# makefile (from `Makefile', line 26)
+BINARY = $(IMG_NAME)_$(ARCH)
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/dhf/Library/Application Support/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
+# environment
+LOGNAME = dhf
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 5)
+TEST = dhf0820
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 45)
+@protoc -I proto proto/*.proto --go_out = plugins=grpc:./pb
+# makefile (from `Makefile', line 23)
+SERVER_PKG_BUILD := ""gitlab.com/dhf0820/ids_release_service"/cmd/server"
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = dhf
+# makefile (from `Makefile', line 6)
+PROD = vertisoft
+# makefile
+.DEFAULT_GOAL := all
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/d5/_rdllmh520s_t3zrf73qndth0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/dhf/Library/Application Support/Code/1.67.0-main.sock
+# makefile (from `Makefile', line 19)
+API_REST_OUT := "api/api.pb.gw.go"
+# makefile (from `Makefile', line 8)
+ARCH = $(ARC)
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.31977268.31977274
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# makefile (from `Makefile', line 32)
+GOTEST = $(GOCMD) test
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 14)
+SERVER_OUT := "cmd/server"
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 27)
+DOCKER_NAME = $(IMG_NAME)_$(ARCH)
+# makefile (from `Makefile', line 29)
+GOCMD = go
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+MAKELEVEL := 0
+# makefile (from `Makefile', line 4)
+ARC = amd64
+# environment
+LANG = C
+# environment
+VSCODE_PID = 38961
+# variable set hash-table stats:
+# Load=98/1024=10%, Rehash=0, Collisions=7/138=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777232, inode 6168791): 35 files, no impossibilities.
+
+# 35 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+run-client:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 136):
+	go run src/client/main.go  -address localhost -port 9001
+	
+
+build-linux:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	ARCH=amd64
+	CGO_ENABLED=0 GOOS=linux GOARCH=$(ARCH) $(GOBUILD) -o $(BINARY) -v
+	
+
+mac:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 106):
+	ARCH=arm64
+	CGO_ENABLED=0 GOOS=linux GOARCH=$(ARCH) $(GOBUILD) -o $(BINARY) -v
+	
+
+all: server client
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/2=0%
+
+client: dep api
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 115):
+	@go build -i -v -o $(CLIENT_OUT) $(CLIENT_PKG_BUILD)
+	
+
+docker-build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 100):
+	docker build -t $(NS)/$(LINUX_IMAGE_NAME):$(VERSION) -f Dockerfile .
+	
+
+.PHONY: all api server client cert pb1
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+api:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 50):
+	@protoc -I ./protobufs/ \
+	--proto_path=./ \
+	--go_out=plugins=grpc:./ \
+	./protobufs/*.proto
+	
+
+run-server:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 124):
+	go run main.go -port 8080
+	
+
+ 
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+prod:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 82):
+	CGO_ENABLED=0 GOOS=linux GOARCH=$(ARCH) $(GOBUILD) -o $(BINARY) -v
+	docker build -t $(PROD)/$(DOCKER_NAME):$(VERSION) -f Dockerfile .
+	docker push $(PROD)/$(DOCKER_NAME):$(VERSION)
+	# CGO_ENABLED=0 GOOS=linux GOARCH=amd64 $(GOBUILD) -o $(BINARY_UNIX) -v
+	# docker build -t $(PROD)/$(LINUX_IMAGE_NAME):$(VERSION) -f Dockerfile .
+	# docker push $(PROD)/$(LINUX_IMAGE_NAME):$(VERSION)
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-08 17:52:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+server: dep api
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/2=0%
+
+test:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 77):
+	CGO_ENABLED=0 GOOS=linux GOARCH=$(ARCH) $(GOBUILD) -o $(BINARY) -v
+	docker build -t $(TEST)/$(DOCKER_NAME):$(VERSION) -f Dockerfile .
+	docker push $(TEST)/$(DOCKER_NAME):$(VERSION)
+	
+
+dep:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := dep
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/10=10%
+#  commands to execute (from `Makefile', line 67):
+	@go get -v -d ./...
+	
+
+build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 73):
+	CGO_ENABLED=0 GOOS=linux GOARCH=$(ARCH) $(GOBUILD) -o $(BINARY) -v
+	# $(GOBUILD) -o $(BINARY_NAME) -v
+	
+
+cert:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 148):
+	cd cert; ./gen.sh; cd ..
+	
+
+help:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 121):
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+	
+
+run-client-do3:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 133):
+	go run src/client/main.go  -address docker-test.vertisoft.com -port 8080
+	
+
+run-client-tls:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 142):
+	go run cmd/client/main.go  -address 0.0.0.0:7777 -tls server
+	
+
+release:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 91):
+	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 $(GOBUILD) -o $(BINARY_UNIX) -v
+	docker build -t $(NS)/$(LINUX_IMAGE_NAME):$(VERSION) -f Dockerfile .
+	docker push $(NS)/$(LINUX_IMAGE_NAME):$(VERSION)
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+run-client-do-test:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 139):
+	go run src/client/main.go  -address 161.35.229.137 -port 30001
+	
+
+run-client-mutual-tls:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 145):
+	go run cmd/client/main.go  -address 0.0.0.0:7777 -tls mutual
+	
+
+pb1:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 118):
+	@rm $(SERVER_OUT) $(CLIENT_OUT) $(PB_OUT) $(API_REST_OUT) $(API_SWAG_OUT)
+	
+
+tidy:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 70):
+	@go mod tidy
+	
+
+run-server-tls:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 127):
+	go run cmd/server/main.go -port 9901 -tls server
+	
+
+run-server-mutual-tls:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 130):
+	go run cmd/server/main.go -port 7777 -tls mutual
+	
+
+docker-push:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 103):
+	docker push $(NS)/$(LINUX_IMAGE_NAME):$(VERSION)
+	
+
+# files hash-table stats:
+# Load=30/1024=3%, Rehash=0, Collisions=0/56=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Fri May 13 11:50:57 2022
+
+ 

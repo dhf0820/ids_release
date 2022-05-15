@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: "2020-06-19T19:35:15Z"
+  name: roi
+  resourceVersion: "1732713"
+  selfLink: /api/v1/namespaces/roi
+  uid: 652c8deb-f891-4917-9510-9166119d48c9
+spec:
+  finalizers:
+    - kubernetes
+status:
+  phase: Active

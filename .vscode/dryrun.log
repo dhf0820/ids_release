@@ -1,0 +1,9 @@
+make: Entering directory `/Users/dhf/Dropbox/development/ids/services/ids_release_service'
+go get -v -d ./...
+protoc -I ./protobufs/ \
+		--proto_path=./ \
+		--go_out=plugins=grpc:./ \
+		./protobufs/*.proto
+go build -i -v -o "cmd/client" ""gitlab.com/dhf0820/ids_release_service"/cmd/client"
+make: Leaving directory `/Users/dhf/Dropbox/development/ids/services/ids_release_service'
+ 

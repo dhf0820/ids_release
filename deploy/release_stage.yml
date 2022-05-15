@@ -1,0 +1,79 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: release
+  namespace: roi
+  labels:
+    app: release
+spec:
+  type: NodePort
+  selector:
+    app: release
+  ports:
+    - name: grpc
+      port: 9001
+      targetPort: 9001
+      nodePort: 30001
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: release
+  namespace: roi
+  labels:
+    app: release
+    project: roi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: release
+  template:
+    metadata:
+      labels:
+        app: release
+
+
+    spec:
+      containers:
+        - name: release
+          image: dhf0820/release:200801.K8S6
+          env:
+            - name: MONGO_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mongo-passwords
+                  key: mongo-password
+            - name: release_serviceDEPLOYMODE
+              value: "K8S"
+          envFrom:
+            - configMapRef:
+                name: release-stage-settings
+          ports:
+            - containerPort: 9001
+ #   - name: test-app
+ #     protocol: TCP
+ #     port: 9901
+ #     targetPort: 9901
+# selector:
+# app: release
+# sessionAffinity: None
+# type: ClusterIP
+# status:
+# loadBalancer: {}
+
+#
+# kind: Service
+# apiVersion: v1
+# metadata:
+# name: release
+# namespace: roi
+# spec:
+# selector:
+# app: release
+# ports:
+# - protocol: TCP
+# port: 9900
+# nodePort: 31900
+# type: NodePort
+#

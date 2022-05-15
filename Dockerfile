@@ -1,0 +1,14 @@
+FROM alpine:latest
+
+ADD release_linux ./release
+RUN mkdir ./config 
+#RUN mkdir ./tmp
+
+ADD ./config/config.yml ./config/
+ADD $PWD/ca-certificates.crt /etc/ssl/certs/
+ADD $PWD/ssl/vsprivate/ /etc/ssl/vsprivate/
+ADD $PWD/ssl/vscerts/ /etc/ssl/vscerts/
+EXPOSE 50051
+EXPOSE 9200
+
+ENTRYPOINT ["./release"]

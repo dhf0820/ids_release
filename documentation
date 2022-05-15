@@ -1,0 +1,11 @@
+
+customer
+    Dignity NS would be three customers one for each facility
+
+    In each object that references a record in the sites EMR needs to be identified by a foreign_system
+    and a foreign_xxx_id so the site can reference everything in IHIG by their number
+
+    Releases can come form one Customer only. one release could not come from MMR end STE
+
+    Documents in a release can come from MMR ChartArchive, Epic, Cerner,... in one release. In that case
+    reh document needs to store the ForeignID and th ForeignSystem

@@ -1,0 +1,102 @@
+{
+  "Services" : [
+    {
+      "Name" : "v2_release",
+      "Port" : "50051",
+      "DeployMode" : "docker",
+      "Address" : "roi_release",
+      "Fields"  : [
+        {
+          "Name"  : "tls_mode",
+          "Value" : "none"
+        },
+        {
+          "Name"      : "in_queue",
+          "Value"     : "roi_release"
+        }
+      ]
+    },
+    {
+      "Name" : "delivery_service",
+      "Port" : "9202",
+      "DeployMode" : "docker",
+      "Address" : "docker1.ihids.com",
+      "Fields"  : [
+        {
+          "Name"  : "tls_mode",
+          "Value" : "none"
+        },
+        {
+          "Name"      : "in_queue",
+          "Value"     : "roi_delivery"
+        }
+      ]
+    },
+    {
+      "Name" : "v1_release",
+      "Port" : "50051",
+      "DeployMode" : "docker",
+      "Address" : "v1_release",
+      "Fields"  : [
+        {
+          "Name"  : "tls_mode",
+          "Value" : "none"
+        },
+        {
+          "Name"      : "in_queue",
+          "Value"     : "v1_release"
+        }
+      ]
+    },
+    {
+      "Name" : "v2_release_local",
+      "Port" : "9201",
+      "DeployMode" : "local",
+      "Address" : "docker1.ihids.com",
+      "Fields"  : [
+        {
+          "Name"  : "tls_mode",
+          "Value" : "none"
+        },
+        {
+          "Name"      : "in_queue",
+          "Value"     : "roi_release"
+        }
+      ]
+    },
+    {
+      "Name" : "ca_gateway",
+      "DeployMode" : "docker",
+      "Port" : "50051",
+      "Address" : "roi_ca_gateway",
+      "Fields"  : [
+        {
+          "Name"  : "tls_mode",
+          "Value" : "none"
+        },
+        {
+          "Name"      : "in_queue",
+          "Value"     : "release"
+        }
+      ]
+    },
+    {
+      "Name" : "ca_gateway_local",
+      "DeployMode" : "local",
+      "Port" : "9231",
+      "Address" : "roi_ca_gateway",
+      "Fields"  : [
+        {
+          "Name"  : "tls_mode",
+          "Value" : "none"
+        },
+        {
+          "Name"      : "in_queue",
+          "Value"     : "release"
+        }
+      ]
+    }
+  ]
+}
+
+

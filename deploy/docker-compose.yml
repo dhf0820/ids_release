@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+
+  release:
+    image:  dhf0820/release:200804.0         #dhf0820/release:200731.3
+    ports:
+      - "0.0.0.0:9001:50051"  # outside:inside
+    #env_file:
+    #  - .env
+
+#    volumes:
+#      - roi_images:/images
+#      - roi_tmp:/tmp
+#volumes:
+#  roi_images:
+#    external: true
+#  roi_tmp:
+#    external: true

@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  release:
+    image: dhf0820/release_arm64:latest
+    ports:
+      - "0.0.0.0:19101:9200"
+    environment:
+      CONFIG_ADDRESS: "http://docker1.ihids.com:19100/api/rest/v1"
+      SERVICE_NAME: "release"
+      SERVICE_VERSION: "linode"
+      COMPANY: "demo"
+      API: "RESTFUL"
+    # depends_on:
+    #   - core
+    # env_file:
+    #  - .env_release
+    volumes:
+      - release-data:/data
+    networks:
+      - ids_attachable
+      #- vs_network
+
+volumes:
+  core-data:
+  delivery-data:
+  release-data:
+  document-data:
+  ca_connector-data:
+  email-data:
+
+networks:
+   ids_attachable:
+     external: true
+

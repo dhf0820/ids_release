@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 fe77f9ff71dfd692b14d339430f3c0407170b721 Don French <dhfrench@vertisoft.com> 1641173659 -0800	clone: from git@gitlab.com:dhf0820/ids_release_service.git
+fe77f9ff71dfd692b14d339430f3c0407170b721 a04f0655d9ae70693d40d3d98ea42b5ebf145682 Donald Fench <dhfrench@vertisoft.com> 1647549534 -0700	commit: working
+a04f0655d9ae70693d40d3d98ea42b5ebf145682 ea21c514d7035f9a615d71cdfc8ab5add2b2c081 Donald Fench <dhfrench@vertisoft.com> 1647549569 -0700	pull -v --progress --rebase origin refs/heads/main (start): checkout ea21c514d7035f9a615d71cdfc8ab5add2b2c081
+ea21c514d7035f9a615d71cdfc8ab5add2b2c081 ae988d981af3dd82dc5859d999f422694c955db4 Donald Fench <dhfrench@vertisoft.com> 1647549569 -0700	pull -v --progress --rebase origin refs/heads/main (pick): working
+ae988d981af3dd82dc5859d999f422694c955db4 ae988d981af3dd82dc5859d999f422694c955db4 Donald Fench <dhfrench@vertisoft.com> 1647549569 -0700	pull -v --progress --rebase origin refs/heads/main (finish): returning to refs/heads/main

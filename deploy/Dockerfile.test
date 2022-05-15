@@ -1,0 +1,20 @@
+
+##### build stage ###########################################################
+FROM golang:alpine as golang
+
+ADD . /release
+
+RUN go build -o /go/bin/release-server        ./main.go
+RUN go build -o /go/bin/release-client /src/client/client.go
+
+##### run stage #############################################################
+FROM alpine:3.12
+
+RUN apk add --update curl jq && rm -rf /var/cache/apk/*
+
+COPY ./hostIP.sh /usr/local/bin
+
+COPY --from=golang /go/bin/release-server     /usr/local/bin/release-server
+COPY --from=golang /go/bin/release-client     /usr/local/bin/release-client
+
+ENTRYPOINT ["/usr/local/bin/release-server"]
