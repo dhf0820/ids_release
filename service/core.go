@@ -14,7 +14,7 @@ import (
 	//mod "github.com/dhf0820./ds_model"
 	"os"
 
-	common "github.com/dhf0820./ds_model/common"
+	common "github.com/dhf0820/ids_model/common"
 	//"strconv"
 	//"time"
 	//"os"

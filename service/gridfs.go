@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	docMod "github.com/dhf0820./ds_model/document"
+	docMod "github.com/dhf0820/ids_model/document"
 	log "github.com/sirupsen/logrus"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo/gridfs"

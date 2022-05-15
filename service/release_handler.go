@@ -5,16 +5,16 @@ import (
 	"fmt"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/dhf0820./ds_model/common"
-	delvMod "github.com/dhf0820./ds_model/delivery"
-	docMod "github.com/dhf0820./ds_model/document"
-	recipMod "github.com/dhf0820./ds_model/recipMod"
-	relMod "github.com/dhf0820./ds_model/release"
+	"github.com/dhf0820/ids_model/common"
+	delvMod "github.com/dhf0820/ids_model/delivery"
+	docMod "github.com/dhf0820/ids_model/document"
+	recipMod "github.com/dhf0820/ids_model/recipMod"
+	relMod "github.com/dhf0820/ids_model/release"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/schema"
 	log "github.com/sirupsen/logrus"
 
-	//recipMod "github.com/dhf0820./ds_model/recipient"
+	//recipMod "github.com/dhf0820/ids_model/recipient"
 	"time"
 
 	//dm "github.com/dhf0820/ids_document/pkg"

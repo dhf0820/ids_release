@@ -2,7 +2,7 @@ package service
 
 import (
 	// "bytes"
-	// //pm "github.com/dhf0820./ds_model/patient"
+	// //pm "github.com/dhf0820/ids_model/patient"
 	// "io/ioutil"
 	// "strconv"
 
@@ -19,7 +19,7 @@ import (
 	//"github.com/davecgh/go-spew/spew"
 	. "github.com/smartystreets/goconvey/convey"
 
-	//docMod "github.com/dhf0820./ds_model/document"
+	//docMod "github.com/dhf0820/ids_model/document"
 
 	//log "github.com/sirupsen/logrus"
 	"testing"

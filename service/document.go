@@ -1,7 +1,7 @@
 package service
 
 //import (
-//	devMod "github.com/dhf0820./ds_model/device"
+//	devMod "github.com/dhf0820/ids_model/device"
 //)
 
 // /*AddDocument Service Accepts a AddDocumentRequest containing the releaseID and the new docment.

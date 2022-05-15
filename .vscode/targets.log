@@ -16,7 +16,7 @@ Makefile:130: warning: overriding commands for target `mac'
 Makefile:85: warning: ignoring old commands for target `mac'
 
 
-# Make data base, printed on Sun May 15 14:33:36 2022
+# Make data base, printed on Sun May 15 16:18:34 2022
 
 # Variables
 
@@ -47,6 +47,8 @@ CURDIR := /Users/dhf/Dropbox/development/ids/services/ids_release
 # makefile
 SHELL = /bin/sh
 # environment
+DOCUMENT_HOST = http://localhost:19203/api/rest/v1/
+# environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
@@ -73,7 +75,7 @@ INFOPATH = /opt/homebrew/share/info:
 # makefile (from `Makefile', line 32)
 GOCLEAN = $(GOCMD) clean
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/d5/_rdllmh520s_t3zrf73qndth0000gn/T/vscode-ipc-5a2bb622-4875-435a-a7bc-338f972b400f.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/d5/_rdllmh520s_t3zrf73qndth0000gn/T/vscode-ipc-f6ff89a5-03d4-4e3d-9a62-a01b1f59953f.sock
 # environment
 VSCODE_CWD = /Users/dhf/Dropbox/development/ids/services
 # environment
@@ -165,7 +167,7 @@ PROD = vertisoft
 # default
 MAKECMDGOALS := all
 # environment
-TERM_SESSION_ID = w0t10p0:16EC1A72-DBDF-4C88-9012-CCE3E4EADAAB
+TERM_SESSION_ID = w0t5p0:45E4AF6B-A807-4833-A583-91443D92B006
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
@@ -193,7 +195,7 @@ MFLAGS = -Rrqp
 # environment
 TERM_PROGRAM_VERSION = 3.4.15
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.31977268.31977274.5FE0BBE1-9792-4F14-8CC6-CC3A40BAE8B4
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.31977268.31977274.BDF5D5C9-E07F-4C35-B021-233332254C3F
 # environment
 LC_TERMINAL_VERSION = 3.4.15
 # environment
@@ -203,7 +205,7 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t10p0:16EC1A72-DBDF-4C88-9012-CCE3E4EADAAB
+ITERM_SESSION_ID = w0t5p0:45E4AF6B-A807-4833-A583-91443D92B006
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # makefile (from `Makefile', line 33)
@@ -245,7 +247,7 @@ TERM = xterm-256color
 # environment
 VSCODE_PID = 38961
 # variable set hash-table stats:
-# Load=112/1024=11%, Rehash=0, Collisions=11/152=7%
+# Load=113/1024=11%, Rehash=0, Collisions=11/153=7%
 
 # Pattern-specific Variable Values
 
@@ -313,11 +315,11 @@ docker-build:
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 124):
+ 
 	docker buildx -t $(NS)/$(LINUX_IMAGE_NAME):$(VERSION) -f Dockerfile_$(ARCH) .
 	
 
 .PHONY: all api server client cert pb1
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -364,7 +366,7 @@ prod:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-15 13:58:53
+#  Last modified 2022-05-15 14:34:46
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -535,7 +537,6 @@ run-server-mutual-tls:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  commands to execute (from `Makefile', line 154):
 	go run cmd/server/main.go -port 7777 -tls mutual
 	
@@ -570,6 +571,6 @@ docker-push:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sun May 15 14:33:36 2022
+# Finished Make data base on Sun May 15 16:18:34 2022
 
  

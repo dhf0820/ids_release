@@ -8,8 +8,8 @@ import (
 	"strings"
 
 	"github.com/davecgh/go-spew/spew"
-	devMod "github.com/dhf0820./ds_model/device"
-	recipMod "github.com/dhf0820./ds_model/recipMod"
+	devMod "github.com/dhf0820/ids_model/device"
+	recipMod "github.com/dhf0820/ids_model/recipMod"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 

@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	cm "github.com/dhf0820./ds_model/common"
+	cm "github.com/dhf0820/ids_model/common"
 
 	//core "github.com/dhf0820/ids_core/connect_core"
 	log "github.com/sirupsen/logrus"

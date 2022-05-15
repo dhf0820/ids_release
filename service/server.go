@@ -10,7 +10,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/dhf0820./ds_model/common"
+	"github.com/dhf0820/ids_model/common"
 
 	//"github.com/dhf0820/ids_release_service/protobufs/relPB"
 	//"google.golang.org/grpc"

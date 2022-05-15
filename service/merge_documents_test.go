@@ -5,7 +5,7 @@ import (
 
 	//"github.com/davecgh/go-spew/spew"
 
-	//docMod "github.com/dhf0820./ds_model/document"
+	//docMod "github.com/dhf0820/ids_model/document"
 
 	//"github.com/davecgh/go-spew/spew"
 	. "github.com/smartystreets/goconvey/convey"

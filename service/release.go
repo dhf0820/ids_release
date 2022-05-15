@@ -10,12 +10,12 @@ import (
 	"os"
 
 	"github.com/davecgh/go-spew/spew"
-	common "github.com/dhf0820./ds_model/common"
-	delvMod "github.com/dhf0820./ds_model/delivery"
-	devMod "github.com/dhf0820./ds_model/device"
-	docMod "github.com/dhf0820./ds_model/document"
-	recipMod "github.com/dhf0820./ds_model/recipMod"
-	relMod "github.com/dhf0820./ds_model/release"
+	common "github.com/dhf0820/ids_model/common"
+	delvMod "github.com/dhf0820/ids_model/delivery"
+	devMod "github.com/dhf0820/ids_model/device"
+	docMod "github.com/dhf0820/ids_model/document"
+	recipMod "github.com/dhf0820/ids_model/recipMod"
+	relMod "github.com/dhf0820/ids_model/release"
 	log "gitgithub.com/dhf0820.ids_model
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

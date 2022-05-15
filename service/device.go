@@ -7,7 +7,7 @@ import (
 	"net/http"
 
 	"github.com/davecgh/go-spew/spew"
-	devMod "github.com/dhf0820./ds_model/device"
+	devMod "github.com/dhf0820/ids_model/device"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 

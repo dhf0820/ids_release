@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/davecgh/go-spew/spew"
-	relMod "github.com/dhf0820./ds_model/release"
+	relMod "github.com/dhf0820/ids_model/release"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 
 	//"github.com/davecgh/go-spew/spew"

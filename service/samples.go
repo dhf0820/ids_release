@@ -5,12 +5,12 @@ import (
 
 	"github.com/google/uuid"
 
-	docMod "github.com/dhf0820./ds_model/document"
+	docMod "github.com/dhf0820/ids_model/document"
 
-	common "github.com/dhf0820./ds_model/common"
-	delvMod "github.com/dhf0820./ds_model/delivery"
-	patMod "github.com/dhf0820./ds_model/patient"
-	relMod "github.com/dhf0820./ds_model/release"
+	common "github.com/dhf0820/ids_model/common"
+	delvMod "github.com/dhf0820/ids_model/delivery"
+	patMod "github.com/dhf0820/ids_model/patient"
+	relMod "github.com/dhf0820/ids_model/release"
 	relPB "github.com/dhf0820/ids_release_service/protobufs/relPB"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 
