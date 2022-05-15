@@ -4,8 +4,8 @@ package service
 //import (
 //	"fmt"
 //	"github.com/google/uuid"
-//	"gitlab.com/dhf0820/ids_release_service/internal/domain"
-//	relPB "gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+//	"github.com/dhf0820/ids_release_service/internal/domain"
+//	relPB "github.com/dhf0820/ids_release_service/protobufs/relPB"
 //	m "github.com/dhf0820./ds_model"
 //
 //	//"go.mongodb.org/mongo-driver/bson/primitive"

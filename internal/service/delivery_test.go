@@ -2,12 +2,12 @@ package service
 
 //import (
 //	"fmt"
-//	//db "gitlab.com/dhf0820/ids_delivery_service/db/vsmongo"
+//	//db "github.com/dhf0820/ids_delivery/db/vsmongo"
 //	"os"
 //	"context"
-//	//"gitlab.com/dhf0820/ids_delivery_service/protobufs/delPB"
+//	//"github.com/dhf0820/ids_delivery/protobufs/delPB"
 //	. "github.com/smartystreets/goconvey/convey"
-//	dc "gitlab.com/dhf0820/ids_delivery_service/client"
+//	dc "github.com/dhf0820/ids_delivery/client"
 //	//"google.golang.org/grpc"
 //	"testing"
 //)

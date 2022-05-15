@@ -7,15 +7,15 @@ package service
 //	"fmt"
 //	mod "github.com/dhf0820./ds_model"
 //
-//	// "gitlab.com/dhf0820/ca_link_service/config"
+//	// "github.com/dhf0820/ca_link_service/config"
 //
-//	//rec "gitlab.com/dhf0820/ca_link_service/clients/recipient"
-//	//m "gitlab.com/dhf0820/ca_link_service/models"
-//	//rc "gitlab.com/dhf0820/roi-recipient/client"
+//	//rec "github.com/dhf0820/ca_link_service/clients/recipient"
+//	//m "github.com/dhf0820/ca_link_service/models"
+//	//rc "github.com/dhf0820/roi-recipient/client"
 //
 //	"github.com/davecgh/go-spew/spew"
 //	log "github.com/sirupsen/logrus"
-//	delPB "gitlab.com/dhf0820/ids_delivery_service/protobufs/delPB"
+//	delPB "github.com/dhf0820/ids_delivery/protobufs/delPB"
 //
 //	"google.golang.org/grpc"
 //	"google.golang.org/grpc/credentials"

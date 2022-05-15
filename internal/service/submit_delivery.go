@@ -5,19 +5,19 @@ package service
 //	"context"
 //	"fmt"
 //	"github.com/davecgh/go-spew/spew"
-//	"gitlab.com/dhf0820/ids_release_service/internal/domain"
+//	"github.com/dhf0820/ids_release_service/internal/domain"
 //	m "github.com/dhf0820./ds_model"
 //
-//	//"gitlab.com/dhf0820/ids_release_service/pkg/common"
-//	dc "gitlab.com/dhf0820/ids_delivery_service/client"
+//	//"github.com/dhf0820/ids_release_service/pkg/common"
+//	dc "github.com/dhf0820/ids_delivery/client"
 //	"go.mongodb.org/mongo-driver/bson/primitive"
 //	"google.golang.org/grpc/codes"
 //	"google.golang.org/grpc/status"
 //
 //	//"github.com/davecgh/go-spew/spew"
 //
-//	//delvClient "gitlab.com/dhf0820/ids_release_service/internal/clients/delivery_client"
-//	"gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+//	//delvClient "github.com/dhf0820/ids_release_service/internal/clients/delivery_client"
+//	"github.com/dhf0820/ids_release_service/protobufs/relPB"
 //)
 //
 //func (s *ReleaseServiceServer) SubmitDelivery(ctx context.Context,

@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/dhf0820/ids_model/common"
+	"github.com/dhf0820/ids_release_service/service"
 	log "github.com/sirupsen/logrus"
-	"gitlab.com/dhf0820/ids_release_service/service"
 	// "strings"
 	//"google.golang.org/grpc/credentials"
 )

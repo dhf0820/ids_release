@@ -1,9 +1,18 @@
-make: Entering directory `/Users/dhf/Dropbox/development/ids/services/ids_release_service'
+make --dry-run --always-make --keep-going --print-directory
+go: warning: "github.com/dhf0820/ids_release_service/..." matched no packages
+Makefile:124: warning: overriding commands for target `docker-build'
+Makefile:79: warning: ignoring old commands for target `docker-build'
+Makefile:127: warning: overriding commands for target `docker-push'
+Makefile:82: warning: ignoring old commands for target `docker-push'
+Makefile:130: warning: overriding commands for target `mac'
+Makefile:85: warning: ignoring old commands for target `mac'
+
+make: Entering directory `/Users/dhf/Dropbox/development/ids/services/ids_release'
 go get -v -d ./...
 protoc -I ./protobufs/ \
 		--proto_path=./ \
 		--go_out=plugins=grpc:./ \
 		./protobufs/*.proto
-go build -i -v -o "cmd/client" ""gitlab.com/dhf0820/ids_release_service"/cmd/client"
-make: Leaving directory `/Users/dhf/Dropbox/development/ids/services/ids_release_service'
+go build -i -v -o "cmd/client" ""github.com/dhf0820/ids_release_service"/cmd/client"
+make: Leaving directory `/Users/dhf/Dropbox/development/ids/services/ids_release'
  

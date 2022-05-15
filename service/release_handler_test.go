@@ -12,7 +12,7 @@ import (
 	// "math/rand"
 	// "net/http"
 	//"context"
-	//pb "gitlab.com/dhf0820/ids_core_service/protobufs/corePB"
+	//pb "github.com/dhf0820/ids_core/protobufs/corePB"
 	//grpc "google.golang.org/grpc"
 	//"github.com/joho/godotenv"
 	//"os"

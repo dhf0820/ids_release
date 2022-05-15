@@ -5,14 +5,14 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	//corepkg "gitlab.com/dhf0820/ids_core_service/pkg"
+	//corepkg "github.com/dhf0820/ids_core/pkg"
 	"net/http"
 	"os"
 	"sync"
 
 	"github.com/dhf0820./ds_model/common"
 
-	//"gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+	//"github.com/dhf0820/ids_release_service/protobufs/relPB"
 	//"google.golang.org/grpc"
 	//"google.golang.org/grpc/reflection"
 	"net"

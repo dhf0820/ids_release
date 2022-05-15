@@ -9,7 +9,7 @@ package vsmongo
 //"time"
 //
 //log "github.com/sirupsen/logrus"
-//	"gitlab.com/dhf0820/ids_release_service/internal/settings"
+//	"github.com/dhf0820/ids_release_service/internal/settings"
 //"go.mongodb.org/mongo-driver/mongo"
 //"go.mongodb.org/mongo-driver/mongo/options"
 //)

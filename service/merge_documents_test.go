@@ -9,8 +9,8 @@ import (
 
 	//"github.com/davecgh/go-spew/spew"
 	. "github.com/smartystreets/goconvey/convey"
-	//deliv "gitlab.com/dhf0820/delivery_service/connect_deliver"
-	//pb "gitlab.com/dhf0820/delivery_service/protobufs/delPB"
+	//deliv "github.com/dhf0820/delivery_service/connect_deliver"
+	//pb "github.com/dhf0820/delivery_service/protobufs/delPB"
 	"testing"
 )
 

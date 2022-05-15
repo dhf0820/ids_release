@@ -1,10 +1,9 @@
-module github.com/dhf0820/ids_release_service
+module github.com/dhf0820/ids_release
 
 go 1.17
 
-replace github.com/dhf0820/ids_release_service => ../ids_release_service
+replace github.com/dhf0820/ids_release => ../ids_release
 
-//replace gitlab.com/dhf0820/ids_release_service => /home/dhf/Dropbox/development/ids/services/ids_release_service
 
 //replace go.mongodb.org/mongo-driver => /Users/dhf/work/mongo-go-driver
 
@@ -16,7 +15,6 @@ require (
 	github.com/sirupsen/logrus v1.8.1
 	github.com/smartystreets/goconvey v1.7.2
 	github.com/streadway/amqp v1.0.0
-	gitlab.com/dhf0820/ids_core_service v0.0.0-20211214034447-f43f9ebb0218
 	go.mongodb.org/mongo-driver v1.8.4
 	google.golang.org/grpc v1.42.0
 	google.golang.org/protobuf v1.27.1

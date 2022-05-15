@@ -1,4 +1,5 @@
 package connect
+
 //
 //import (
 //	"crypto/tls"
@@ -9,7 +10,7 @@ package connect
 //	//"github.com/aws/aws-sdk-go/service/mediaconvert"
 //
 //	log "github.com/sirupsen/logrus"
-//	pb "gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+//	pb "github.com/dhf0820/ids_release_service/protobufs/relPB"
 //	"google.golang.org/grpc"
 //	"google.golang.org/grpc/credentials"
 //	"io/ioutil"

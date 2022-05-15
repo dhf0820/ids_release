@@ -3,7 +3,7 @@ package client
 //import (
 //	"fmt"
 //	"github.com/davecgh/go-spew/spew"
-//	relPB "gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+//	relPB "github.com/dhf0820/ids_release_service/protobufs/relPB"
 //)
 //
 //func ToRelease(c *relPB.Release) *Release {

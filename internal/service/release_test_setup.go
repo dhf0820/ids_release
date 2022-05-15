@@ -2,14 +2,14 @@ package service
 
 //import (
 //	"context"
-//	relPB "gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+//	relPB "github.com/dhf0820/ids_release_service/protobufs/relPB"
 //	"net"
 //	//"testing"
 //
 //	log "github.com/sirupsen/logrus"
 //
-//	//sample "gitlab.com/dhf0820/ids_release_service/src/sample"
-//	"gitlab.com/dhf0820/ids_release_service/internal/settings"
+//	//sample "github.com/dhf0820/ids_release_service/src/sample"
+//	"github.com/dhf0820/ids_release_service/internal/settings"
 //	"google.golang.org/grpc"
 //	"google.golang.org/grpc/test/bufconn"
 //)

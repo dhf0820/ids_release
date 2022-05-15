@@ -4,13 +4,13 @@ package domain
 //import (
 //	"context"
 //	"fmt"
-//	db "gitlab.com/dhf0820/ids_release_service/internal/db/vsmongo"
-//	"gitlab.com/dhf0820/ids_release_service/internal/settings"
+//	db "github.com/dhf0820/ids_release_service/internal/db/vsmongo"
+//	"github.com/dhf0820/ids_release_service/internal/settings"
 //	m "github.com/dhf0820./ds_model"
 //	"go.mongodb.org/mongo-driver/bson/primitive"
 //
 //	. "github.com/smartystreets/goconvey/convey"
-//	//c "gitlab.com/dhf0820/ids_release_service/pkg/common"
+//	//c "github.com/dhf0820/ids_release_service/pkg/common"
 //	//"go.mongodb.org/mongo-driver/bson/primitive"
 //	"os"
 //	"testing"

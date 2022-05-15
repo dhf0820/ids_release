@@ -5,10 +5,10 @@ package service
 //	//"fmt"
 //	//
 //	////"github.com/davecgh/go-spew/spew"
-//	//dc "gitlab.com/dhf0820/ids_release_service/internal/clients/delivery_client"
+//	//dc "github.com/dhf0820/ids_release_service/internal/clients/delivery_client"
 //	//
 //	////"fmt"
-//	//"gitlab.com/dhf0820/ids_release_service/internal/domain"
+//	//"github.com/dhf0820/ids_release_service/internal/domain"
 //)
 
 //sendToDeliveryService accepts the release, recipient, and delivery device returning the id of the delivery and error

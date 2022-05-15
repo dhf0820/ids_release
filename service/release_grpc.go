@@ -7,7 +7,7 @@ package service
 // 	"github.com/davecgh/go-spew/spew"
 // 	log "github.com/sirupsen/logrus"
 // 	m "github.com/dhf0820./ds_model"
-// 	relPB "gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+// 	relPB "github.com/dhf0820/ids_release_service/protobufs/relPB"
 // 	//"go.mongodb.org/mongo-driver/bson/primitive"
 // )
 

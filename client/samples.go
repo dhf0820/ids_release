@@ -2,15 +2,15 @@ package client
 
 //import (
 //	"fmt"
-//	"gitlab.com/dhf0820/ids_release_service/internal/domain"
+//	"github.com/dhf0820/ids_release_service/internal/domain"
 //	m "github.com/dhf0820./ds_model"
 //	"go.mongodb.org/mongo-driver/bson/primitive"
 //	"strconv"
 //
-//	//"gitlab.com/dhf0820/ids_release_service/internal/service"
-//	//"gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+//	//"github.com/dhf0820/ids_release_service/internal/service"
+//	//"github.com/dhf0820/ids_release_service/protobufs/relPB"
 //
-//	//"gitlab.com/dhf0820/ids_release_service/internal/domain"
+//	//"github.com/dhf0820/ids_release_service/internal/domain"
 //	"math/rand"
 //	//"strconv"
 //	"time"

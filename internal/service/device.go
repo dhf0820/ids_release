@@ -4,7 +4,7 @@ package service
 //	"context"
 //	"fmt"
 //	"github.com/davecgh/go-spew/spew"
-//	"gitlab.com/dhf0820/ids_delivery_service/protobufs/delPB"
+//	"github.com/dhf0820/ids_delivery/protobufs/delPB"
 //	mod "github.com/dhf0820./ds_model"
 //	"go.mongodb.org/mongo-driver/bson/primitive"
 //)

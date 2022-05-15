@@ -6,7 +6,7 @@ package domain
 //	//"go.mongodb.org/mongo-driver/bson/primitive"
 //	//"time"
 //
-//	//"gitlab.com/dhf0820/ids_release_service/src/settings"
+//	//"github.com/dhf0820/ids_release_service/src/settings"
 //	//"go.mongodb.org/mongo-driver/bson/primitive"
 //)
 

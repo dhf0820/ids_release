@@ -3,15 +3,15 @@ package service
 //import (
 //	"context"
 //	"fmt"
-//	db "gitlab.com/dhf0820/ids_release_service/internal/db/vsmongo"
-//	"gitlab.com/dhf0820/ids_release_service/internal/domain"
-//	"gitlab.com/dhf0820/ids_release_service/internal/settings"
+//	db "github.com/dhf0820/ids_release_service/internal/db/vsmongo"
+//	"github.com/dhf0820/ids_release_service/internal/domain"
+//	"github.com/dhf0820/ids_release_service/internal/settings"
 //	"go.mongodb.org/mongo-driver/bson/primitive"
 //	"os"
 //
 //	//log "github.com/sirupsen/logrus"
 //	"testing"
-//	relPB "gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+//	relPB "github.com/dhf0820/ids_release_service/protobufs/relPB"
 //	"github.com/stretchr/testify/require"
 //
 //	"google.golang.org/grpc"

@@ -6,7 +6,7 @@ package domain
 //	"fmt"
 //	mod "github.com/dhf0820./ds_model"
 //
-//	//c "gitlab.com/dhf0820/ids_release_service/pkg/common"
+//	//c "github.com/dhf0820/ids_release_service/pkg/common"
 //	"go.mongodb.org/mongo-driver/bson/primitive"
 //)
 //

@@ -13,7 +13,7 @@ package service
 // 	//log "github.com/sirupsen/logrus"
 // 	"testing"
 
-// 	core "gitlab.com/dhf0820/ids_core_service/connect_core"
+// 	core "github.com/dhf0820/ids_core/connect_core"
 // )
 
 // func TestInitialize(t *testing.T) {

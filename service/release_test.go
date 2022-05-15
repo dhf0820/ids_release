@@ -11,7 +11,7 @@ import (
 
 	//"github.com/davecgh/go-spew/spew"
 	. "github.com/smartystreets/goconvey/convey"
-	//documentModel "gitlab.com/dhf0820/ids_document_service/pkg"
+	//documentModel "github.com/dhf0820/ids_document/pkg"
 	//"io/ioutil"
 
 	"testing"

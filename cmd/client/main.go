@@ -5,16 +5,14 @@ import (
 	//"flag"
 	//"fmt"
 	//"github.com/davecgh/go-spew/spew"
-	//relSrv "gitlab.com/dhf0820/ids_release_service/connect"
-	relPB "gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+	//relSrv "github.com/dhf0820/ids_release_service/connect"
+	relPB "github.com/dhf0820/ids_release_service/protobufs/relPB"
 	//"os"
-
 	//"google.golang.org/grpc"
 	//"time"
-
 	//"github.com/davecgh/go-spew/spew"
 	//log "github.com/sirupsen/logrus"
-	//"gitlab.com/dhf0820/ids_release_service/internal/service"
+	//"github.com/dhf0820/ids_release_service/internal/service"
 )
 
 var baseAddr *string

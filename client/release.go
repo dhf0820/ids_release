@@ -5,14 +5,14 @@ package client
 //	"context"
 //	"fmt"
 //	"github.com/davecgh/go-spew/spew"
-//	//"gitlab.com/dhf0820/ids_delivery_service/protobufs/delPB"
+//	//"github.com/dhf0820/ids_delivery/protobufs/delPB"
 //	"go.mongodb.org/mongo-driver/bson/primitive"
 //	//"time"
 //	m "github.com/dhf0820./ds_model"
 //	//"google.golang.org/grpc/codes"
 //	//"google.golang.org/grpc/status"
 //	//"github.com/davecgh/go-spew/spew"
-//	relPB "gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+//	relPB "github.com/dhf0820/ids_release_service/protobufs/relPB"
 //)
 //
 ////type Client struct {

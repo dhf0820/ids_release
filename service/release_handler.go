@@ -17,7 +17,7 @@ import (
 	//recipMod "github.com/dhf0820./ds_model/recipient"
 	"time"
 
-	//dm "gitlab.com/dhf0820/ids_document_service/pkg"
+	//dm "github.com/dhf0820/ids_document/pkg"
 	"io/ioutil"
 	"net/http"
 

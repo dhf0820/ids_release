@@ -6,15 +6,15 @@ import (
 	"fmt"
 
 	"github.com/davecgh/go-spew/spew"
+	pb "github.com/dhf0820/ids_core/protobufs/corePB"
 	log "github.com/sirupsen/logrus"
-	pb "gitlab.com/dhf0820/ids_core_service/protobufs/corePB"
 
 	//mod "github.com/dhf0820./ds_model"
 	"io/ioutil"
 	"os"
 
 	common "github.com/dhf0820./ds_model/common"
-	corePkg "gitlab.com/dhf0820/ids_core_service/pkg"
+	corePkg "github.com/dhf0820/ids_core/pkg"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"

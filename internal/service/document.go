@@ -3,8 +3,8 @@ package service
 //import (
 //	"context"
 //	"fmt"
-//	domain "gitlab.com/dhf0820/ids_release_service/internal/domain"
-//	relPB "gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+//	domain "github.com/dhf0820/ids_release_service/internal/domain"
+//	relPB "github.com/dhf0820/ids_release_service/protobufs/relPB"
 //	"go.mongodb.org/mongo-driver/bson/primitive"
 //	"time"
 //)

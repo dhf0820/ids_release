@@ -300,12 +300,7 @@ github.com/youmark/pkcs8 v0.0.0-20181117223130-1be2e3e5546d/go.mod h1:rHwXgn7Jul
 github.com/youmark/pkcs8 v0.0.0-20201027041543-1326539a0a0a h1:fZHgsYlfvtyqToslyjUt3VOPF4J7aK/3MPcK7xp3PDk=
 github.com/youmark/pkcs8 v0.0.0-20201027041543-1326539a0a0a/go.mod h1:ul22v+Nro/R083muKhosV54bj5niojjWZvU8xrevuH4=
 github.com/yuin/goldmark v1.3.5/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=
-gitlab.com/dhf0820/ids_core_service v0.0.0-20211202230732-c43ef4e671c9/go.mod h1:t+TBSdr9edioh0bztyaHV70jL2Kbz66LHeSUxKW6/0M=
-gitlab.com/dhf0820/ids_core_service v0.0.0-20211214034447-f43f9ebb0218 h1:uqZdYuRbMWUS0bpEbEMrusuXyd5vFbQBnf3EBbUJ6a0=
-gitlab.com/dhf0820/ids_core_service v0.0.0-20211214034447-f43f9ebb0218/go.mod h1:L0lcnjJ3owB5Z+yWc2eUCp5PMP5/XWHmATZE8NeIV8s=
-gitlab.com/dhf0820/ids_delivery_service v0.0.0-20211205214510-fffc8793e9af/go.mod h1:ZdZxocreWZ0jfjq8Dy2W28mzpKFeIR3Rfc7CQobUUcM=
-gitlab.com/dhf0820/ids_document_service v0.0.0-20211202041059-7741afa962a2/go.mod h1:4rD3pVxYO8aKXscVFYoIh1erHD56fYNPsjllnnz90as=
-gitlab.com/dhf0820/ids_document_service v0.0.0-20211203225117-a5d40512291a/go.mod h1:cKVsgSe0rN6LpP3qebTw79eCzwXl5dCu1ez576n1ezQ=
+
 go.etcd.io/bbolt v1.3.2/go.mod h1:IbVyRI1SCnLcuJnV2u8VeU0CEYM7e686BmAb1XKL+uU=
 go.mongodb.org/mongo-driver v1.4.4/go.mod h1:WcMNYLx/IlOxLe6JRJiv2uXuCz6zBLndR4SoGjYphSc=
 go.mongodb.org/mongo-driver v1.5.3/go.mod h1:gRXCHX4Jo7J0IJ1oDQyUxF7jfy19UfxniMS4xxMmUqw=

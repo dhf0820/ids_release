@@ -4,9 +4,9 @@ package client
 	"crypto/tls"
 	"crypto/x509"
 	"fmt"
-	relPB "gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+	relPB "github.com/dhf0820/ids_release_service/protobufs/relPB"
 	"strings"
-	//cc "gitlab.com/dhf0820/roi-core/client"
+	//cc "github.com/dhf0820/roi-core/client"
 	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
@@ -227,5 +227,4 @@ func mutualTLS() grpc.DialOption {
 	// Create the Credentials and return it
 	return grpc.WithTransportCredentials(credentials.NewTLS(config))
 }
- */
-
+*/

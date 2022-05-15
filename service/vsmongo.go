@@ -4,13 +4,13 @@ import (
 	"context"
 	"fmt"
 
-	//corepkg "gitlab.com/dhf0820/ids_core_service/pkg"
+	//corepkg "github.com/dhf0820/ids_core/pkg"
 	"strconv"
 	"time"
 
 	cm "github.com/dhf0820./ds_model/common"
 
-	//core "gitlab.com/dhf0820/ids_core_service/connect_core"
+	//core "github.com/dhf0820/ids_core/connect_core"
 	log "github.com/sirupsen/logrus"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"

@@ -6,9 +6,9 @@ package client
 // 	//"github.com/davecgh/go-spew/spew"
 
 // 	//"github.com/davecgh/go-spew/spew"
-// 	//"gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+// 	//"github.com/dhf0820/ids_release_service/protobufs/relPB"
 
-// 	"gitlab.com/dhf0820/ids_release_service/service"
+// 	"github.com/dhf0820/ids_release_service/service"
 // 	"os"
 // 	"testing"
 // 	. "github.com/smartystreets/goconvey/convey"

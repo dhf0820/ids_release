@@ -11,7 +11,7 @@ import (
 	delvMod "github.com/dhf0820./ds_model/delivery"
 	patMod "github.com/dhf0820./ds_model/patient"
 	relMod "github.com/dhf0820./ds_model/release"
-	relPB "gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+	relPB "github.com/dhf0820/ids_release_service/protobufs/relPB"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 
 	//"go.mongodb.org/mongo-driver/bson/primitive"

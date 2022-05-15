@@ -71,9 +71,9 @@ package service
 
 // //import (
 // //	"github.com/davecgh/go-spew/spew"
-// //	"gitlab.com/dhf0820/ids_release_service/internal/domain"
-// //	c "gitlab.com/dhf0820/ids_release_service/pkg/common"
-// //	relPB "gitlab.com/dhf0820/ids_release_service/protobufs/relPB"
+// //	"github.com/dhf0820/ids_release_service/internal/domain"
+// //	c "github.com/dhf0820/ids_release_service/pkg/common"
+// //	relPB "github.com/dhf0820/ids_release_service/protobufs/relPB"
 // //	mod "github.com/dhf0820./ds_model"
 // //	"go.mongodb.org/mongo-driver/bson/primitive"
 // //	"testing"
@@ -81,8 +81,8 @@ package service
 // //	"fmt"
 // //	"os"
 // //	"time"
-// //	"gitlab.com/dhf0820/ids_release_service/internal/settings"
-// //	db "gitlab.com/dhf0820/ids_release_service/internal/db/vsmongo"
+// //	"github.com/dhf0820/ids_release_service/internal/settings"
+// //	db "github.com/dhf0820/ids_release_service/internal/db/vsmongo"
 // //	"google.golang.org/grpc"
 // //	"github.com/stretchr/testify/require"
 // //)

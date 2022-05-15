@@ -3,7 +3,7 @@ package domain
 //import (
 //	"fmt"
 //	"github.com/stretchr/testify/require"
-//	"gitlab.com/dhf0820/ids_release_service/internal/settings"
+//	"github.com/dhf0820/ids_release_service/internal/settings"
 //	"testing"
 //)
 //

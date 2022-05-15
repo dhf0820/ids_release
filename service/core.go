@@ -10,7 +10,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 	//mod "github.com/dhf0820./ds_model"
-	"gitlab.com/dhf0820/ids_release_service/messaging"
+	"github.com/dhf0820/ids_release_service/messaging"
 	//mod "github.com/dhf0820./ds_model"
 	"os"
 
@@ -20,7 +20,7 @@ import (
 	//"os"
 	//"io/ioutil"
 	//mod "github.com/dhf0820./ds_model"
-	//"gitlab.com/dhf0820/ca_link_service/messaging"
+	//"github.com/dhf0820/ca_link_service/messaging"
 )
 
 /* DeliveryConfig is the basic configuration for this all services available to the current service

@@ -3,9 +3,9 @@ package service
 //
 //import (
 //	"fmt"
-//	db "gitlab.com/dhf0820/ids_release_service/internal/db/vsmongo"
+//	db "github.com/dhf0820/ids_release_service/internal/db/vsmongo"
 //
-//	//db "gitlab.com/dhf0820/ids_release_service/internal/db/vsmongo"
+//	//db "github.com/dhf0820/ids_release_service/internal/db/vsmongo"
 //	m "github.com/dhf0820./ds_model"
 //	"go.mongodb.org/mongo-driver/bson"
 //	"go.mongodb.org/mongo-driver/bson/primitive"
